@@ -1,0 +1,194 @@
+/* Mise en page générale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Section gauche */
+.left {
+    width: 35%;
+    background: #2a2a72;
+    color: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.left h1 span {
+    color: #ffdd57;
+}
+
+.left h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.info .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffdd57;
+    padding-bottom: 8px;
+    font-weight: 600;
+    color: #ffdd57;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #f1f1f1;
+}
+
+.info ul li a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.langues .percent div {
+    height: 8px;
+    background: #ffdd57;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+/* Centres d'intérêt */
+.interet {
+    margin-top: 30px;
+}
+
+.interet ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+/* Section droite */
+.right {
+    width: 65%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 0;
+}
+
+.right .title2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2a2a72;
+    padding-bottom: 8px;
+    font-weight: 600;
+    color: #2a2a72;
+}
+
+.right .about {
+    margin-bottom: 30px;
+}
+
+.right .box {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.right .box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right .box ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+.right .box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Compétences */
+.skills .percent div {
+    height: 8px;
+    background: #2a2a72;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.skills .box {
+    margin-bottom: 20px;
+}
+
+/* Réactivité responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .left {
+        padding: 25px 15px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .left h2 {
+        font-size: 16px;
+    }
+
+    .right .title2 {
+        font-size: 18px;
+    }
+
+    .right .box h4 {
+        font-size: 16px;
+    }
+
+    .right .box ul li {
+        font-size: 14px;
+    }
+}

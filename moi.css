@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pappins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+span {
+    color: violet;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    margin: 0 25px;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    border-bottom: 4px solid violet;
+    color: violet;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact:hover {
+    background-color: violet;
+    box-shadow: 0 0 25px violet;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(242, 242, 242);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h2 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.button-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.cv {
+    padding: 25px 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cv:hover:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.button-2 {
+    padding: 15px 20px;
+    background-color: violet;
+    color: white;
+
+}
+.btn-envoyer {
+    background-color: violet; /* Couleur de fond violet */
+    color: white; /* Couleur du texte en blanc */
+    padding: 12px 25px; /* Espacement interne du bouton */
+    border: none; /* Retirer la bordure par défaut */
+    border-radius: 8px; /* Bords arrondis */
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur de la souris en forme de main */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition fluide pour le hover */
+}
+
+.btn-envoyer:hover {
+    background-color: #ee2ef1; /* Couleur de fond violet plus foncé au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol pour un effet 3D */
+}
+
+.image img{
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px violet,
+                0 0 50px violet;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: violet;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 64px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size:20px;
+    margin:2em 0 3em ;
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 32px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1em;
+    font-size: 18px;
+    color: black;
+    background-color: rgba(242, 242, 242);
+    border-radius: .7rem;
+    margin: 1rem 0;
+    resize: none;
+}
+/* Style de base pour le footer */
+.footer {
+    background-color: #333; /* Fond sombre */
+    color: #fff; /* Texte en blanc */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contenu des icônes sociales */
+.footer .contenu {
+    margin-bottom: 20px;
+}
+
+/* Style des liens (icônes) dans le footer */
+.footer .contenu a {
+    color: #fff; /* Couleur des icônes */
+    font-size: 30px; /* Taille des icônes */
+    margin: 0 15px; /* Espacement entre les icônes */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition au survol */
+}
+
+.footer .contenu a:hover {
+    color: #e446dc; /* Changer la couleur au survol */
+    transform: scale(1.2); /* Agrandir légèrement l'icône au survol */
+}
+
+/* Liste des liens supplémentaires */
+.footer .list {
+    list-style-type: none; /* Enlever les puces de la liste */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer .list li {
+    display: inline; /* Affichage en ligne */
+    margin: 0 15px; /* Espacement entre les éléments */
+}
+
+.footer .list li a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Enlever le soulignement */
+    font-size: 16px; /* Taille du texte */
+    transition: color 0.3s ease; /* Transition de couleur au survol */
+}
+
+.footer .list li a:hover {
+    color: #e72be7; /* Couleur au survol */
+}
+
+/* Copyright */
+.footer .copyright {
+    font-size: 14px; /* Taille du texte copyright */
+    color: #ccc; /* Couleur plus claire pour le texte copyright */
+    margin-top: 20px;
+}
